@@ -33,3 +33,50 @@ Alternativas a GitHub:
 - AWS CodeCommit o Gitea: otras opciones, la primera dentro del ecosistema de Amazon y la segunda ligera y de código abierto.
 
 
+4. Glosario básico
+
+- Commit (Confirmación o punto de control)
+
+Es una “foto” o punto guardado del estado del proyecto en un momento determinado, acompañada de un mensaje que explica qué se cambió. Cada commit queda en el historial y permite volver a ese punto si es necesario.
+
+Ejemplo: git commit -m "Agrego validación al formulario de registro"
+
+- Branch (Rama)
+
+Es una línea de desarrollo independiente que se separa de la principal para trabajar sin afectarla. Lo que se haga en la rama no cambia el código estable hasta que se decida unirlo.
+
+Ejemplo: git branch login crea una rama llamada login, y git checkout login te cambia a ella para empezar a trabajar ahí.
+
+- Merge (Fusión)
+
+Es unir los cambios de una rama con otra, normalmente cuando se termina de desarrollar algo. Si dos ramas modificaron la misma parte del código, puede aparecer un conflicto que hay que resolver manualmente.
+
+Ejemplo: estando en main, ejecutas git merge login para incorporar todo lo que hiciste en la rama login.
+
+- Pull y Push
+
+Push: envía tus commits locales al repositorio remoto para que otros puedan verlos.
+Pull: trae los cambios que hay en el remoto y los integra en tu copia local.
+
+Ejemplo: git push origin main sube tu trabajo a la nube; git pull origin main descarga lo que subieron tus compañeros.
+
+- Pull Request (PR)
+
+Es una solicitud para que los cambios de una rama se integren en otra (generalmente main o develop). Permite que el equipo revise el código, deje comentarios y lo apruebe antes de fusionarlo. Se crea en la plataforma (GitHub, GitLab), no directamente en Git.
+
+Ejemplo: terminas la rama login, abres un PR hacia main, un compañero revisa tu código, pide un ajuste y finalmente lo aprueba.
+
+- Clone (Clonar)
+
+Es descargar una copia completa de un repositorio remoto a tu computador, incluyendo todo su historial y sus ramas. Además, deja configurado automáticamente el remoto de donde vino.
+
+Ejemplo: git clone https://github.com/usuario/proyecto.git
+
+- Upstream y Origin
+
+Origin es el nombre por defecto del repositorio remoto del que clonaste, normalmente tu propio repositorio o el del equipo.
+Upstream es el nombre que se suele dar al repositorio original cuando haces un fork (una copia propia) de un proyecto ajeno. Sirve para mantener tu fork actualizado con los cambios del proyecto original.
+
+Ejemplo: haces fork de un proyecto de otra persona. Tu fork es origin y el repositorio original lo agregas como upstream con git remote add upstream https://github.com/autor-original/proyecto.git. Luego, con git pull upstream main traes sus novedades.
+
+
