@@ -18,3 +18,18 @@ También permite trabajar en equipo y revisar los cambios que se realizan en un 
 Una analogía: Git es como el motor de un carro, y GitHub es como un parqueadero compartido con servicios extra donde guardas y compartes tu carro con otros. Se puede usar Git sin GitHub, pero no se puede usar GitHub sin Git.
 
 
+3. ¿Qué es una nube de repositorios?
+
+Es un servicio en internet donde se almacenan repositorios de Git en servidores remotos. Funciona como la copia central del proyecto: el equipo sube (push) sus cambios y descarga (pull) los de los demás desde ahí. Esto permite colaborar desde cualquier lugar, tener un respaldo del código si el computador falla y controlar quién puede ver o modificar el proyecto.
+
+Alternativas a GitHub:
+
+- GitLab: incluye CI/CD (integración y despliegue continuo) de forma nativa y se puede instalar en servidores propios.
+
+- Bitbucket (de Atlassian): se integra muy bien con herramientas como Jira y Trello.
+
+- Azure DevOps Repos (de Microsoft): muy usado en entornos empresariales.
+
+- AWS CodeCommit o Gitea: otras opciones, la primera dentro del ecosistema de Amazon y la segunda ligera y de código abierto.
+
+
