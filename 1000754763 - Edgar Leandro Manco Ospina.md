@@ -80,3 +80,27 @@ Upstream es el nombre que se suele dar al repositorio original cuando haces un f
 Ejemplo: haces fork de un proyecto de otra persona. Tu fork es origin y el repositorio original lo agregas como upstream con git remote add upstream https://github.com/autor-original/proyecto.git. Luego, con git pull upstream main traes sus novedades.
 
 
+5. La importancia de las ramas
+
+Las ramas son importantes porque nos permiten trabajar en diferentes partes de un proyecto sin afectar directamente la versión principal.
+
+Por ejemplo, si necesitamos agregar una nueva función, podemos crear una rama y trabajar en ella. Cuando terminemos, podemos unir esos cambios con la rama principal.
+
+Ventajas en el trabajo individual:
+- Permiten realizar pruebas y modificaciones sin afectar el proyecto principal.
+
+- Ayudan a mantener organizadas las diferentes funciones del proyecto.
+
+- Facilitan el seguimiento de los cambios realizados.
+
+Ventajas en el trabajo en equipo:
+
+- Cada integrante puede trabajar en una rama diferente sin afectar el trabajo de los demás.
+
+- Permiten revisar los cambios antes de agregarlos al proyecto principal.
+
+- Facilitan la identificación y solución de errores.
+
+- Permiten que varias personas trabajen al mismo tiempo en diferentes partes del proyecto.
+
+
