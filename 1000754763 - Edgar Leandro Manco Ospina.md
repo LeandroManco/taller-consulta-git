@@ -104,3 +104,19 @@ Ventajas en el trabajo en equipo:
 - Permiten que varias personas trabajen al mismo tiempo en diferentes partes del proyecto.
 
 
+6. ¿Qué es GitFlow?
+
+GitFlow es una forma de organizar el trabajo con Git mediante diferentes ramas. Cada una tiene una función específica dependiendo de la etapa en la que se encuentre el proyecto.
+
+Sus principales ramas son:
+- master o main: Es la rama principal, donde se mantiene la versión estable del proyecto.
+
+- develop: Es donde se van uniendo las nuevas funciones que se desarrollan antes de preparar una nueva versión.
+
+- feature: Son ramas que se crean para trabajar en nuevas funciones sin modificar directamente el proyecto principal.
+
+- release: Se utiliza cuando una versión está casi terminada y necesita algunos ajustes o correcciones antes de publicarse.
+
+- hotfix: Se utiliza para solucionar errores importantes que aparecen en una versión que ya fue publicada.
+
+En general, GitFlow permite organizar mejor el desarrollo de un proyecto, ya que cada rama tiene una función y ayuda a mantener separados los cambios nuevos de las versiones estables.
